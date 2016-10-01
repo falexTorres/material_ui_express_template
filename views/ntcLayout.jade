@@ -1,0 +1,20 @@
+doctype html
+html
+	head
+		title NTC
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/static/stylesheets/layout.css')
+		link(rel='stylesheet', href='/static/stylesheets/styles.min.css')
+
+	body.main-body
+		#navbar
+		block content
+		block scripts
+		footer.footer
+			div.row.text-center.footer-div
+				div.col-sm-12.col-md-12.col-lg-12
+					p Powered by NTC, LLC. 
+		script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')

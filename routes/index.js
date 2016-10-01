@@ -3,7 +3,7 @@ var router = express.Router();
 var User = require('../models/user');
 var data = require('../db/data.js');
 /* GET home page. */
-router.get('/', function(req, res, next) {
+/*router.get('/', function(req, res, next) {
   data.callMe();
   var unList = [];
   var pwList = [];
@@ -20,6 +20,14 @@ router.get('/', function(req, res, next) {
     console.log("printing each list on server side:\n" + unList + " " + pwList);
     res.render('index', { unList: unList, pwList: pwList, title: 'Express' });
   });
+});*/
+
+router.get('/', function(req, res, next) {
+	res.render('ntcSplash');
+});
+
+router.get('/home', function(req, res, next) {
+	res.render('ntcHome');
 });
 
 router.get('/playground', function(req, res, next) {

@@ -1,20 +1,21 @@
 var dest = './public/build',
-    src = './public/javascripts/';
+    srcHome = './public/javascripts/home/';
+		srcSplash = './public/javascripts/splash/';
 
 module.exports = {
   browserify: {
     debug: true, 
     bundleConfigs: [
     {
-      entries: src + 'playground.js',
+      entries: srcHome + 'home.js',
       dest: dest,
-      outputName: 'playground.js'
+      outputName: 'home.js'
 
     },
     {
-      entries: src + 'index.js',
+      entries: srcSplash + 'splash.js',
       dest: dest,
-      outputName: 'index.js'
+      outputName: 'splash.js'
     }],
 
     extensions: ['.js']
